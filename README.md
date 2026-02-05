@@ -1,112 +1,111 @@
-# OpenClaw Proxy Configuration Skill
+# OpenClaw Skills Collection
 
-[![OpenClaw Skill](https://img.shields.io/badge/OpenClaw-Skill-blue)](https://github.com/openclaw/skills)
+[![OpenClaw Skills](https://img.shields.io/badge/OpenClaw-Skills-blue)](https://github.com/openclaw/skills)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
+Collection of OpenClaw skills built for the **OpenClaw x Moltbook Hackathon** ($30,000 USDC prize pool).
+
+---
+
+## 🎯 Skills
+
+### 1. OpenClaw Proxy Configuration 🇨🇳
+
+**Repository**: [hanpaopao001/openclaw-proxy](https://github.com/hanpaopao001/openclaw-proxy)
 
 One-click solution for OpenClaw proxy configuration in restricted networks (China, Iran, Russia, etc.).
 
-## 🎯 Features
+**Features**:
+- Auto-Diagnose proxy issues
+- Multi-Channel Support (Telegram, Twitter/X, GitHub, Discord, Slack)
+- Smart Configuration
+- Built-in Troubleshooting
 
-- **Auto-Diagnose** - One command to detect all proxy issues
-- **Multi-Channel Support** - Telegram, Twitter/X, GitHub, Discord, Slack, and more
-- **Smart Configuration** - Auto-detect and apply best proxy settings
-- **Troubleshooting** - Built-in diagnostics and fixes
+**Track**: Best OpenClaw Skill
+
+---
+
+### 2. OpenClaw Social Bridge 🌉
+
+**Repository**: This repository
+
+Bridge content across platforms seamlessly.
+
+**Features**:
+- 🌉 **Cross-Platform Sync** - Twitter/X ↔ Telegram auto-forwarding
+- 📝 **AI Summaries** - Auto-generate summaries for content
+- 📅 **Scheduled Posts** - Bulk publish to multiple platforms
+- 📊 **Analytics** - Track engagement across platforms
+
+**Commands**:
+```bash
+# Auto-forward tweets to Telegram
+social-bridge watch twitter --user username --telegram @channel --summarize
+
+# Schedule posts
+social-bridge schedule --platform twitter --time "2026-02-08 10:00" --content "..."
+
+# Cross-post to multiple platforms
+social-bridge crosspost --twitter --telegram --discord --content "..."
+```
+
+**Track**: Agentic Commerce OR Best OpenClaw Skill
+
+---
+
+## 🏆 Hackathon Info
+
+- **Event**: OpenClaw x Moltbook Hackathon
+- **Prize Pool**: $30,000 USDC
+- **Deadline**: February 8, 2026, 12:00 PM PST
+- **Submit**: [moltbook.com/post/b021cdea-...](https://moltbook.com/post/b021cdea-4c1a-8115-a736-9c6a1b9c1f8d)
+
+---
 
 ## 📦 Installation
 
-1. Download the skill file (coming soon)
-2. Place in your OpenClaw skills directory
-3. Restart OpenClaw
-
-Or install via CLI:
+### For Proxy Skill
 
 ```bash
 openclaw skill install openclaw-proxy
 ```
 
-## 🚀 Quick Start
-
-### Auto-Configure (Recommended)
+### For Social Bridge
 
 ```bash
-# Detect and fix all proxy issues
-proxy-setup --auto
-
-# Verify configuration
-proxy-validate --full
+openclaw skill install openclaw-social-bridge
 ```
-
-### Channel-Specific
-
-```bash
-# Fix Telegram only
-telegram-proxy-fix --token YOUR_BOT_TOKEN --proxy http://127.0.0.1:7897
-
-# Configure GitHub
-github-proxy-setup --token YOUR_GH_TOKEN
-
-# Configure Twitter/X
-twitter-proxy-setup --bearer YOUR_BEARER_TOKEN
-```
-
-## 📋 Supported Channels
-
-| Channel | Status | Proxy Type |
-|---------|--------|------------|
-| Telegram | ✅ Tested | HTTP only |
-| Twitter/X | ✅ Tested | HTTP |
-| GitHub | ✅ Tested | HTTP |
-| Discord | ⚠️ Beta | HTTP |
-| Slack | ⚠️ Beta | HTTP |
-
-## 🔧 Configuration
-
-### Required OpenClaw Config
-
-```json5
-{
-  "channels": {
-    "telegram": {
-      "enabled": true,
-      "botToken": "YOUR_BOT_TOKEN",
-      "proxy": "http://127.0.0.1:7897",
-      "network": {
-        "autoSelectFamily": false
-      }
-    }
-  }
-}
-```
-
-### Common Proxy Addresses
-
-| Tool | HTTP | SOCKS5 |
-|------|------|--------|
-| Clash | `http://127.0.0.1:7897` | `socks5://127.0.0.1:7890` |
-| V2Ray | `http://127.0.0.1:10809` | `socks5://127.0.0.1:10808` |
-| Surge | `http://127.0.0.1:6152` | `socks5://127.0.0.1:6153` |
-
-## 🏆 Hackathon
-
-This skill was built for the **OpenClaw x Moltbook Hackathon** ($30,000 USDC prize pool).
-
-**Track:** Best OpenClaw Skill
-
-## 📝 License
-
-MIT License - feel free to use and modify!
-
-## 🤝 Contributing
-
-Pull requests welcome! Especially for:
-- New channel support
-- More proxy tools
-- Better documentation
-
-## 📧 Contact
-
-Created by [@hanpaopao008](https://x.com/hanpaopao008)
 
 ---
 
-**Note:** This skill solves real connectivity issues for OpenClaw users in restricted networks. Built with ❤️ and experience debugging Telegram proxy problems.
+## 🔧 Development
+
+OpenClaw skills follow the standard structure:
+
+```
+skill-name/
+├── SKILL.md          # Required: skill documentation
+├── scripts/          # Optional: executable scripts
+├── references/       # Optional: reference documentation
+└── assets/           # Optional: assets for output
+```
+
+See [OpenClaw Skills Documentation](https://docs.openclaw.ai/skills) for details.
+
+---
+
+## 📧 Contact
+
+- **Twitter**: [@hanpaopao008](https://x.com/hanpaopao008)
+- **GitHub**: [hanpaopao001](https://github.com/hanpaopao001)
+- **Moltbook**: [moltbook.com/@hanpaopao001](https://moltbook.com/@hanpaopao001)
+
+---
+
+## 📝 License
+
+MIT License - Feel free to use and modify!
+
+---
+
+**Built with ❤️ for the OpenClaw Community**
